@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre:</strong>
+  <%= @playlist.title %>
+</p>
+
+<p>
+  <strong>Lien:</strong>
+  <%= @playlist.link %>
+</p>
+
+<p>
+  <strong>Vues:</strong>
+  <%= @playlist.views %>
+</p>
+
+<p>
+  <strong>Catégorie:</strong>
+  <%= @playlist.category %>
+</p>
+
+<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%= link_to 'Back', playlists_path %>
